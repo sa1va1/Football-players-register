@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/stye.css">
+</head>
+<body class="bg-gray-100 p-6">
+
+    <div class="max-w-lg mx-auto bg-white p-6 rounded-lg shadow-lg">
+        <h2 class="text-2xl font-bold mb-4">Register Football Player</h2>
+        <form id="playerForm" class="space-y-4">
+            <div>
+                <label class="block text-sm font-medium text-gray-700">Name</label>
+                <input type="text" id="name" class="mt-1 w-full rounded-md border-solid border-2 border-gray-400 shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" required>
+            </div>
+            <div>
+                <label class="block text-sm font-medium text-gray-700">Age</label>
+                <input type="number" id="age" class="mt-1 w-full rounded-md border-solid border-2 border-gray-400 shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" required>
+            </div>
+            <div>
+                <label class="block text-sm font-medium text-gray-700">Club</label>
+                <input type="text" id="club" class="mt-1 w-full rounded-md border-solid border-2 border-gray-400 shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" required>
+            </div>
+            <button type="submit" class="w-full bg-indigo-600 text-white py-2 px-4 rounded-md shadow-sm hover:bg-indigo-700 focus:outline-none">Register</button>
+        </form>
+    </div>
+    
+    <div class="max-w-lg mx-auto bg-white p-6 mt-6 rounded-lg shadow-lg">
+        <h2 class="text-2xl font-bold mb-4">Registered Players</h2>
+        <div class="mb-4">
+            <label class="block text-sm font-medium text-gray-700">Filter by Club</label>
+            <select id="filterClub" class="mt-1 w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
+                <option value="">All Clubs</option>
+            </select>
+        </div>
+        <div id="playersList"></div>
+    </div>
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="./script/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background: rgb(78, 145, 226);
+  background: linear-gradient(100deg, rgb(78, 145, 226) 35%, rgb(88, 227, 203) 100%);
+}
